@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.app .nav-bar {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    padding: 8px 15px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    height: 26px;
+}
+
+.nav-bar .left-items div {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.cosmos {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.2;
+}
+
+.app .svg-dimension {
+    display: block;
+    height: 26px;
+    width: 195px;
+}
+
+.left-items div a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right-items .btn {
+    padding: 11px 12px 8px;
+    margin-right: 8px;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 0.69em;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 11px;
+}
