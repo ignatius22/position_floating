@@ -18,26 +18,28 @@ body {
 
 .nav-bar .left-items div {
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
-.cosmos {
+.left-items div a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.86);
+    font-weight: normal;
+}
+
+.left-items .left-item .cosmos {
     font-size: 0.9em;
     text-transform: uppercase;
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     font-weight: 700;
     letter-spacing: 0.2;
+    color: #000;
 }
 
 .app .svg-dimension {
     display: block;
     height: 26px;
     width: 195px;
-}
-
-.left-items div a {
-    text-decoration: none;
-    color: #000;
 }
 
 .right-items .btn {
