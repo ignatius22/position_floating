@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    color: #333;
 }
 
 .app .nav-bar {
@@ -73,7 +74,7 @@ body {
     margin-right: auto;
 }
 
-h1 {
+.heading {
     color: #121212;
     font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
     font-weight: 700;
@@ -154,6 +155,10 @@ figcaption {
     display: inline-block;
 }
 
+.subscribe {
+    text-align: center;
+}
+
 .subscribe,
 ul,
 li {
@@ -165,7 +170,17 @@ li {
 
 .blue {
     color: rgb(50, 104, 145);
-    margin-left: 14px;
+    margin-left: 12px;
+    position: relative;
+    bottom: 10px;
+}
+
+.common-link:visited {
+    color: #326891;
+}
+
+.single-link {
+    text-decoration: none;
 }
 
 .holder-author span {
@@ -314,4 +329,39 @@ li {
     border-color: rgb(255, 255, 255) transparent;
     border-style: solid;
     border-width: 6px 0px 0px 6px;
+}
+
+section {
+    grid-column: 2/3;
+    width: 945px;
+    height: 745px;
+    margin-left: 40px;
+}
+
+.picture {
+    background-image: url("/img/inflation-945.png");
+    width: 945px;
+    height: 576px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: nyt-franklin, arial, helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.section-1 {
+    margin-top: 140px;
+    margin-right: 12px;
+}
+
+.group-strong {
+    padding: 3px;
+    font-size: 12px;
 }
