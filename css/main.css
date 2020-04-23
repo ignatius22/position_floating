@@ -155,11 +155,13 @@ figcaption {
     display: inline-block;
 }
 
-.subscribe {
+.subscribe-text {
     text-align: center;
+    width: 560px;
+    height: 76px;
 }
 
-.subscribe,
+.subscribe-text,
 ul,
 li {
     list-style: none;
@@ -168,11 +170,18 @@ li {
     font-weight: 700;
 }
 
-.blue {
+.blue a {
     color: rgb(50, 104, 145);
     margin-left: 12px;
     position: relative;
     bottom: 10px;
+    text-decoration: none;
+}
+
+.border-bridge {
+    width: 72px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin: 0px auto 18px;
 }
 
 .common-link:visited {
@@ -256,15 +265,14 @@ li {
     vertical-align: middle;
 }
 
-.award-icon {
+.bookmark-icon {
     left: 0px;
     position: relative;
     top: 10px;
 }
 
-.award-btn {
+.bookmark-icon-btn {
     background: transparent;
-    background-color: #eee;
     border: none;
 }
 
@@ -331,7 +339,7 @@ li {
     border-width: 6px 0px 0px 6px;
 }
 
-section {
+.section-1 {
     grid-column: 2/3;
     width: 945px;
     height: 745px;
@@ -346,7 +354,7 @@ section {
     background-size: cover;
 }
 
-main {
+.main-1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-family: nyt-franklin, arial, helvetica, sans-serif;
@@ -356,7 +364,17 @@ main {
     color: #000000;
 }
 
-.section-1 {
+.border-bridge-bottom {
+    width: 72px;
+    border-bottom: 1px solid #333;
+    margin: 15px 0 15px 0;
+}
+
+.article-2 {
+    grid-column: 2/3;
+}
+
+.text-body {
     margin-top: 140px;
     margin-right: 12px;
 }
@@ -364,4 +382,17 @@ main {
 .group-strong {
     padding: 3px;
     font-size: 12px;
+}
+
+.section-2 {
+    grid-column: 2/3;
+    margin-left: 200px;
+    width: 600px;
+}
+
+.video-holder iframe {
+    width: 600px;
+    height: 319px;
+    position: relative;
+    right: 40px;
 }
