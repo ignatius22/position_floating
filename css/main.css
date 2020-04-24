@@ -499,6 +499,8 @@ li {
 
 .social-icons2 ul li {
     display: inline-block;
+    position: relative;
+    left: 50px;
 }
 
 .social-icons2 {
@@ -514,55 +516,73 @@ li {
 
 .section-4 {
     grid-column: 1/3;
+    background-color: rgb(255, 255, 255);
 }
 
-.grid-hodler {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-top: 45px;
-    padding-top: 4px;
-    background-color: rgb(247, 247, 247);
-    width: 1278px;
+.grid-holder {
+    max-width: 852px;
+    height: 1037px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 32px;
+}
+
+.header-grid {
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 852px;
+    height: 40px;
+    grid-column: 1/3;
+    margin-bottom: 10px;
+}
+
+.cosmos-section,
+.cos-link {
+    background-color: white;
+    box-sizing: border-box;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: 851.25px;
+}
+
+.cos-link {
+    text-decoration: none;
+    color: black;
 }
 
 .grids {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 852px;
-    height: 631px;
-}
-
-.grids:nth-child(3) {
-    border-right: none;
-    padding: 0px 0px 20px;
-}
-
-.grids2 {
-    display: flex;
-}
-
-.grid,
-.image {
-    width: 272.63px;
-    height: 181.75px;
+    width: 851.25px;
+    grid-gap: 0.858em;
 }
 
 .grid {
-    margin-left: 5px;
-    margin-right: 10px;
     padding: 0;
+    margin: 0;
 }
 
-.header-grid {
-    grid-column: 1/3;
-    height: 40px;
-    width: 852px;
+.image {
+    width: 272px;
+    height: 181px;
 }
 
-.aside-bar {
-    grid-column: 2/3;
-    width: 315px;
-    margin: auto;
+.css-1jrkbnf {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    margin-top: 3px;
+    min-height: 12px;
+}
+
+.css-ctzi8t {
+    text-align: right;
+    color: rgb(153, 153, 153);
+    font-size: 0.6em;
+    line-height: 1.23em;
+    margin: 3px 8px 0px;
 }
