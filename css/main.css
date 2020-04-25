@@ -430,11 +430,11 @@ li {
 }
 
 .caption-description,
-.css-1fxp258 {
+.credit-text {
     font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
-.css-1fxp258 {
+.credit-text {
     font-size: 0.8125rem;
     display: inline;
     color: #888;
@@ -442,7 +442,7 @@ li {
     letter-spacing: 0.01em;
 }
 
-.css-1ly73wi {
+.credit-span {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -543,7 +543,6 @@ li {
 }
 
 .cosmos-section,
-.css-hd8liv,
 .cos-link {
     background-color: white;
     box-sizing: border-box;
@@ -580,13 +579,13 @@ li {
     height: 181px;
 }
 
-.css-1jrkbnf {
+.common-caption {
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     margin-top: 3px;
     min-height: 12px;
 }
 
-.css-ctzi8t {
+.common-section {
     text-align: right;
     color: rgb(153, 153, 153);
     font-size: 0.6em;
@@ -599,7 +598,7 @@ li {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.css-tzamlu {
+.editor-head {
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     border-top: 1px solid rgb(0, 0, 0);
@@ -615,7 +614,7 @@ li {
     width: 852px;
 }
 
-.css-1py452b {
+.common-span {
     font-family: nyt-franklin, helvetica, arial, sans-serif;
     font-weight: 500;
     font-size: 0.75rem;
@@ -624,16 +623,14 @@ li {
     color: rgb(153, 153, 153);
 }
 
-.css-1bds1ip {
+.common-heading {
     color: rgb(18, 18, 18);
     font-size: 1.125rem;
     line-height: 22px;
 }
 
 .aside-bar {
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
     font-size: 1rem;
-    font-weight: 700;
     line-height: 1.375rem;
     padding-bottom: 15px;
     border-top: 1px solid rgb(0, 0, 0);
@@ -643,11 +640,7 @@ li {
     height: 1037.25px;
 }
 
-.css-hd8liv {
-    padding: 17px 0px 0px;
-}
-
-.css-1bds1ip {
+.common-heading {
     font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
     font-weight: 500;
     color: rgb(51, 51, 51);
@@ -658,19 +651,33 @@ li {
     bottom: 12px;
 }
 
-.css-1py452b {
+.common-span {
     position: relative;
     bottom: 25px;
 }
 
-.css-18cmw3s {
+.group-h {
     border-bottom: 1px solid rgb(226, 226, 226);
     padding: 15px 0px;
     font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
     font-weight: 500;
     color: rgb(51, 51, 51);
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.135rem;
+    line-height: 1.875rem;
+    margin: auto;
+}
+
+.grouped-h {
+    margin-top: 15px;
+    border-top: 1px solid rgb(226, 226, 226);
+}
+
+.hgroup1 {
     width: 315px;
-    height: auto;
+    height: 50px;
+}
+
+.hgroup2 {
+    width: 315px;
+    height: 75px;
 }
