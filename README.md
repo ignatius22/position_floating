@@ -2,7 +2,7 @@
 
 > This project consists of building an HTML document that matches the appearance of position and floating.
 
-![screenshot](./snapshot.png)
+![screenshot](img/snapshot.png)
 
 Additional description about the project and its features.
 
