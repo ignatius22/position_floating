@@ -423,6 +423,15 @@ li {
   width: 600px;
 }
 
+.img-hero {
+  width: 945px;
+  height: 531px;
+}
+
+iframe {
+  border: none;
+}
+
 .video-holder iframe,
 .img-holder img {
   width: 600px;
