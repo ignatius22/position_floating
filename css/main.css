@@ -44,30 +44,48 @@ body {
 .list-common-link a,
 .subscribe-text,
 ul,
-li,
-.holder-author,
+li ,.holder-author,
 .author-link,
-.by,
-.date-time {
+.by,.date-time,
+.main-1,
+.util-comments-btn,
+.article-bottom-caption,
+.comments-btn,
+.common-span,
+.cosmos-section,
+.cos-link,
+.common-caption,
+.expand-text,
+.fixed-footer-content,
+.footer-link,
+.list-link,
+.list-common-link-1,
+.list-common-link,
+.list-same,
+.go-to-homepage-link{
   font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
-.left-items .left-item .cosmos,
-.right-items .btn,
-.list-common-link a,
-.subscribe-text,
+
+.left-items .left-item .cosmos ,
+.right-items .btn ,.list-common-link a,.subscribe-text,
 ul,
-li,
+li ,
 .holder-author,
 .author-link,
-.by, {
+.by,
+.cosmos-section,
+.cos-link,
+.expand-text,
+.heading{
   font-weight: 700;
 }
 
-.left-items .left-item .cosmos,
+.left-items .left-item .cosmos ,
 .right-items .btn {
-  text-transform: uppercase;
+   text-transform: uppercase;
 }
+
 
 .app .svg-dimension {
   display: block;
@@ -100,10 +118,14 @@ li,
   margin-right: auto;
 }
 
+
+.group-h,
+.common-heading{
+   font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+}
+
 .heading {
   color: #121212;
-  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
-  font-weight: 700;
   font-style: italic;
   line-height: 2.25rem;
   margin: 0 20px 1rem;
@@ -165,7 +187,9 @@ figcaption,
 .article-body,
 .article-body-2,
 .article-body-3,
-.textbody {
+.textbody.
+.caption-description,
+.credit-text  {
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
@@ -189,7 +213,6 @@ figcaption,
 
 .list-common-link a {
   color: rgb(0, 0, 0);
-  display: inline-block;
   text-transform: capitalize;
   width: 150px;
   font-size: 16px;
@@ -199,9 +222,6 @@ figcaption,
   text-decoration: none;
 }
 
-.holder-author span a {
-  display: inline-block;
-}
 
 .subscribe-text {
   text-align: center;
@@ -252,27 +272,41 @@ li {
 }
 
 .date-time {
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-  font-weight: 500;
   color: #333;
   margin-bottom: 1rem;
   font-size: 0.8125rem;
-  line-height: 1rem;
   margin-top: 0;
 }
 
+.date-time,
+.comments-btn{
+  font-weight: 500;
+  line-height: 1rem;
+}
+
 .list-footer-2 {
-  display: inline-block;
   line-height: 20px;
   padding: 0 10px;
 }
 
 .lists-footer-2 li,
-.lists-footer-1 li {
+.lists-footer-1 li,
+.credit-text {
   display: inline;
 }
 
-.social-icons ul li {
+.social-icons ul li,
+.svg-group,
+.svg-group2,
+.list-footer-2,
+.share-icon button.
+.social-icons2 ul li,
+.list-common-link-1,
+.list-common-link,
+.svg-lists-common,
+.list-link,
+.list-common-link a,
+.holder-author span a{
   display: inline-block;
 }
 
@@ -285,28 +319,34 @@ li {
 
 .svg-group,
 .svg-group2 {
-  display: inline-block;
   vertical-align: middle;
+  width: 15px;
+  height: 15px;
+}
+
+.svg-group,
+.svg-group2,
+.share-icon button{
   background-color: #eee;
   border: 1px #eee solid;
   border-radius: 100%;
   padding: 5px;
-  width: 15px;
-  height: 15px;
 }
+
 
 .share-icon {
   height: 37px;
   width: 27px;
 }
 
+.share-icon button ,
+.bookmark-icon-btn,
+.comments-btn.
+.comment-icon{
+   background: transparent;
+}
+
 .share-icon button {
-  background: transparent;
-  display: inline-block;
-  background-color: #eee;
-  border: 1px #eee solid;
-  border-radius: 100%;
-  padding: 5px;
   width: 27px;
   height: 27px;
   cursor: pointer;
@@ -320,22 +360,18 @@ li {
 }
 
 .bookmark-icon-btn {
-  background: transparent;
   border: none;
 }
 
 .comments-btn {
   align-self: center;
-  background-color: transparent;
   bottom: 0.05rem;
   color: rgb(102, 102, 102);
   cursor: pointer;
   display: inline-flex;
   flex-direction: column;
   font-size: 0.75rem;
-  font-weight: 500;
   height: 25px;
-  line-height: 1rem;
   margin-left: 2px;
   min-width: 24px;
   position: relative;
@@ -354,7 +390,6 @@ li {
   min-width: 26px;
   min-height: 14px;
   position: relative;
-  background: transparent;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(102, 102, 102);
@@ -473,14 +508,9 @@ iframe {
   height: 15px;
 }
 
-.caption-description,
-.credit-text {
-  font-family: nyt-imperial, georgia, 'times new roman', times, serif;
-}
 
 .credit-text {
   font-size: 0.8125rem;
-  display: inline;
   color: #888;
   line-height: 1.125rem;
   letter-spacing: 0.01em;
@@ -515,12 +545,6 @@ iframe {
   margin-left: 45px;
 }
 
-.main-1,
-.util-comments-btn,
-.article-bottom-caption,
-.comments-btn {
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-}
 
 .util-comments-btn {
   background-color: rgb(86, 123, 149);
@@ -542,7 +566,6 @@ iframe {
 }
 
 .social-icons2 ul li {
-  display: inline-block;
   position: relative;
   left: 50px;
 }
@@ -590,8 +613,6 @@ iframe {
 .cos-link {
   background-color: white;
   box-sizing: border-box;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
-  font-weight: 700;
   font-size: 1rem;
   line-height: 1.375rem;
   padding-right: 0;
@@ -624,7 +645,6 @@ iframe {
 }
 
 .common-caption {
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   margin-top: 3px;
   min-height: 12px;
 }
@@ -659,7 +679,6 @@ iframe {
 }
 
 .common-span {
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -681,7 +700,7 @@ iframe {
 }
 
 .common-heading {
-  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+
   font-weight: 500;
   color: rgb(51, 51, 51);
   font-size: 1.125rem;
@@ -694,7 +713,6 @@ iframe {
 .group-h {
   border-bottom: 1px solid rgb(226, 226, 226);
   padding: 15px 0;
-  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
   font-weight: 500;
   color: rgb(51, 51, 51);
   font-size: 1.135rem;
@@ -762,7 +780,6 @@ iframe {
 
 .go-to-homepage-link {
   color: rgb(86, 123, 149);
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -785,7 +802,6 @@ iframe {
   color: rgb(51, 51, 51);
   font-size: 13px;
   font-weight: 700;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   height: 25px;
   line-height: 15px;
   text-transform: uppercase;
@@ -822,8 +838,6 @@ iframe {
 
 .list-common-link {
   color: rgb(0, 0, 0);
-  display: inline-block;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   text-transform: capitalize;
   width: 150px;
   font-size: 16px;
@@ -835,7 +849,6 @@ iframe {
 }
 
 .svg-lists-common {
-  display: inline-block;
   height: 13px;
   width: 13px;
   margin-right: 7px;
@@ -848,8 +861,6 @@ svg:not(:root) {
 
 .list-common-link-1 {
   color: rgb(0, 0, 0);
-  display: inline-block;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   text-transform: capitalize;
   width: 150px;
   font-size: 11px;
@@ -868,8 +879,6 @@ svg:not(:root) {
 
 .list-link {
   color: rgb(0, 0, 0);
-  display: inline-block;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   text-transform: capitalize;
   width: 150px;
   font-size: 14px;
@@ -912,7 +921,6 @@ svg:not(:root) {
 
 .footer-link {
   color: #666;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   padding: 10px 0;
   font-size: 11px;
   text-decoration: none;
@@ -931,7 +939,6 @@ svg:not(:root) {
   height: 65px;
   padding-bottom: 5px;
   width: 100%;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   cursor: pointer;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -988,8 +995,6 @@ svg:not(:root) {
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
-  font-weight: 700;
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
   letter-spacing: 0.24px;
   height: 55px;
   line-height: calc(58px);
