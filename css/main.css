@@ -44,9 +44,11 @@ body {
 .list-common-link a,
 .subscribe-text,
 ul,
-li ,.holder-author,
+li,
+.holder-author,
 .author-link,
-.by,.date-time,
+.by,
+.date-time,
 .main-1,
 .util-comments-btn,
 .article-bottom-caption,
@@ -62,30 +64,30 @@ li ,.holder-author,
 .list-common-link-1,
 .list-common-link,
 .list-same,
-.go-to-homepage-link{
+.go-to-homepage-link {
   font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
-
-.left-items .left-item .cosmos ,
-.right-items .btn ,.list-common-link a,.subscribe-text,
+.left-items .left-item .cosmos,
+.right-items .btn,
+.list-common-link a,
+.subscribe-text,
 ul,
-li ,
+li,
 .holder-author,
 .author-link,
 .by,
 .cosmos-section,
 .cos-link,
 .expand-text,
-.heading{
+.heading {
   font-weight: 700;
 }
 
-.left-items .left-item .cosmos ,
+.left-items .left-item .cosmos,
 .right-items .btn {
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 
 .app .svg-dimension {
   display: block;
@@ -118,10 +120,9 @@ li ,
   margin-right: auto;
 }
 
-
 .group-h,
-.common-heading{
-   font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+.common-heading {
+  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
 }
 
 .heading {
@@ -131,6 +132,10 @@ li ,
   margin: 0 20px 1rem;
   font-size: 2.5rem;
   max-width: 600px;
+}
+
+iframe {
+  border: none;
 }
 
 .hero {
@@ -143,6 +148,15 @@ li ,
   font-size: 0.9375rem;
   line-height: 1.25rem;
   text-align: left;
+}
+
+.video-holder iframe,
+.caption-description,
+.img-holder img,
+.util-comments-btn,
+.article-bottom-caption {
+  position: relative;
+  right: 40px;
 }
 
 .copyright {
@@ -170,6 +184,11 @@ figcaption {
   display: block;
 }
 
+.caption-description {
+  color: #666;
+  text-align: left;
+}
+
 .article {
   grid-column: 2/3;
   display: grid;
@@ -187,9 +206,8 @@ figcaption,
 .article-body,
 .article-body-2,
 .article-body-3,
-.textbody.
-.caption-description,
-.credit-text  {
+.textbody. .caption-description,
+.credit-text {
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
 }
 
@@ -211,18 +229,6 @@ figcaption,
   margin-top: 0;
 }
 
-.list-common-link a {
-  color: rgb(0, 0, 0);
-  text-transform: capitalize;
-  width: 150px;
-  font-size: 16px;
-  height: 25px;
-  line-height: 15px;
-  padding-bottom: 0;
-  text-decoration: none;
-}
-
-
 .subscribe-text {
   text-align: center;
   width: 560px;
@@ -234,12 +240,6 @@ ul,
 li {
   list-style: none;
   font-size: 15px;
-}
-
-.left-items div a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.86);
-  font-weight: normal;
 }
 
 .border-bridge {
@@ -254,12 +254,6 @@ li {
 
 .single-link {
   text-decoration: none;
-}
-
-.holder-author span {
-  display: block;
-  margin-top: 27px;
-  letter-spacing: 0.02em;
 }
 
 .holder-author {
@@ -279,14 +273,32 @@ li {
 }
 
 .date-time,
-.comments-btn{
+.comments-btn {
   font-weight: 500;
   line-height: 1rem;
+}
+
+.list-common-link a {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  width: 150px;
+  font-size: 16px;
+  height: 25px;
+  line-height: 15px;
+  padding-bottom: 0;
+  text-decoration: none;
 }
 
 .list-footer-2 {
   line-height: 20px;
   padding: 0 10px;
+}
+
+.svg-lists-common {
+  height: 13px;
+  width: 13px;
+  margin-right: 7px;
+  vertical-align: middle;
 }
 
 .lists-footer-2 li,
@@ -299,15 +311,28 @@ li {
 .svg-group,
 .svg-group2,
 .list-footer-2,
-.share-icon button.
-.social-icons2 ul li,
 .list-common-link-1,
+.list-common-link a,
+.social-icons2 ul li,
 .list-common-link,
+.share-icon button,
 .svg-lists-common,
 .list-link,
-.list-common-link a,
-.holder-author span a{
+.holder-author span a {
   display: inline-block;
+}
+
+.comment-icon {
+  display: flex;
+  justify-content: center;
+  min-width: 26px;
+  min-height: 14px;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(102, 102, 102);
+  border-radius: 4px;
+  padding: 4px;
 }
 
 .social-icons {
@@ -315,6 +340,12 @@ li {
   margin-left: 200px;
   width: 242px;
   height: 35px;
+}
+
+.left-items div a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.86);
+  font-weight: normal;
 }
 
 .svg-group,
@@ -326,24 +357,22 @@ li {
 
 .svg-group,
 .svg-group2,
-.share-icon button{
+.share-icon button {
   background-color: #eee;
   border: 1px #eee solid;
   border-radius: 100%;
   padding: 5px;
 }
 
-
 .share-icon {
   height: 37px;
   width: 27px;
 }
 
-.share-icon button ,
+.share-icon button,
 .bookmark-icon-btn,
-.comments-btn.
-.comment-icon{
-   background: transparent;
+.comments-btn. .comment-icon {
+  background: transparent;
 }
 
 .share-icon button {
@@ -382,19 +411,6 @@ li {
   border-image: initial;
   overflow: visible;
   padding: 0 0 4px;
-}
-
-.comment-icon {
-  display: flex;
-  justify-content: center;
-  min-width: 26px;
-  min-height: 14px;
-  position: relative;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(102, 102, 102);
-  border-radius: 4px;
-  padding: 4px;
 }
 
 .comment-icon::before {
@@ -455,11 +471,6 @@ li {
   grid-column: 2/3;
 }
 
-.text-body {
-  margin-top: 140px;
-  margin-right: 12px;
-}
-
 .group-strong {
   padding: 3px;
   font-size: 12px;
@@ -476,10 +487,6 @@ li {
   height: 531px;
 }
 
-iframe {
-  border: none;
-}
-
 .video-holder iframe,
 .img-holder img {
   width: 600px;
@@ -487,18 +494,9 @@ iframe {
   margin-top: 20px;
 }
 
-.video-holder iframe,
-.caption-description,
-.img-holder img,
-.util-comments-btn,
-.article-bottom-caption {
-  position: relative;
-  right: 40px;
-}
-
-.caption-description {
-  color: #666;
-  text-align: left;
+.text-body {
+  margin-top: 140px;
+  margin-right: 12px;
 }
 
 .caption-text {
@@ -507,7 +505,6 @@ iframe {
   width: 438.81px;
   height: 15px;
 }
-
 
 .credit-text {
   font-size: 0.8125rem;
@@ -544,7 +541,6 @@ iframe {
   color: rgb(102, 102, 102);
   margin-left: 45px;
 }
-
 
 .util-comments-btn {
   background-color: rgb(86, 123, 149);
@@ -700,7 +696,6 @@ iframe {
 }
 
 .common-heading {
-
   font-weight: 500;
   color: rgb(51, 51, 51);
   font-size: 1.125rem;
@@ -846,13 +841,6 @@ iframe {
   line-height: 15px;
   padding-bottom: 0;
   text-decoration: none;
-}
-
-.svg-lists-common {
-  height: 13px;
-  width: 13px;
-  margin-right: 7px;
-  vertical-align: middle;
 }
 
 svg:not(:root) {
